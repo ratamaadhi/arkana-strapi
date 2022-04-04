@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galleries",
+  "info": {
+    "name": "gallery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string"
+    },
+    "keterangan": {
+      "type": "text"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

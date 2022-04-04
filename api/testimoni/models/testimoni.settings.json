@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonis",
+  "info": {
+    "name": "testimoni"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customerName": {
+      "type": "string"
+    },
+    "customerPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bintang": {
+      "type": "integer"
+    },
+    "ulasan": {
+      "type": "text"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "ulasanFoto": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

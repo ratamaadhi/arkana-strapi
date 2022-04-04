@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "About",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "birthDay": {
+      "type": "date"
+    },
+    "linkMap": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "whatsApp": {
+      "type": "string"
+    },
+    "line": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "Note": {
+      "type": "text"
+    },
+    "jamOprasi": {
+      "type": "text"
+    }
+  }
+}
