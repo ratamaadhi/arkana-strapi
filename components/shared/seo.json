@@ -27,6 +27,10 @@
     },
     "metaSubTitle": {
       "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
